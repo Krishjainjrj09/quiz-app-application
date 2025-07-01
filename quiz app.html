@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h2 id="question">Loading...</h2>
+    <ul>
+      <li><button class="answer-btn" data-option="a" onclick="selectAnswer('a')">A</button></li>
+      <li><button class="answer-btn" data-option="b" onclick="selectAnswer('b')">B</button></li>
+      <li><button class="answer-btn" data-option="c" onclick="selectAnswer('c')">C</button></li>
+      <li><button class="answer-btn" data-option="d" onclick="selectAnswer('d')">D</button></li>
+    </ul>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
